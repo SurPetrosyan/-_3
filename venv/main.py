@@ -1,4 +1,4 @@
-from utils import load_data, filter_sort, formatted_data
+from functions import load_data, filter_sort, formatted_data
 
 
 def main():
