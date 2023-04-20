@@ -41,3 +41,4 @@ def test_format_date():
 
 def test_mask_card():
     assert mask_card("Счет 75106830613657916952") == 'Счет **6952'
+
