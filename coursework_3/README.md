@@ -17,8 +17,16 @@ def formatted_data(item)
 def format_date(srt_date)
 def mask_card(card)
 ````
+
 #### _3. В файле ____main.py____  импортировал все функции и создал функцию для вывода 5 последних выполненных клиентом операций_ 
 ````
 def main()
 ````
 #### _4. Создал папку отдельно ____test____ для записи тестов. Тесты написал на ____poetry____ с покрытием более 80%_
+````
+test_load_data() 
+test_filter_sort()
+test_formatted_data()
+test_format_date()
+test_mask_card()
+````
