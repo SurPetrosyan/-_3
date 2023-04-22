@@ -1,4 +1,4 @@
-from functions import filter_sort, format_date, mask_card, formatted_data, load_data
+from coursework.functions import filter_sort, format_date, mask_card, formatted_data, load_data
 
 
 def test_filter_sort():
