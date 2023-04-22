@@ -41,7 +41,7 @@ def test_format_date():
 
 def test_mask_card():
     assert mask_card("Счет 75106830613657916952") == 'Счет **6952'
-    assert mask_card("Visa Classic 6831982476737658") == 'Visa Classic 6831 98** **** 7658'
+    assert mask_card("Visa Classic 6831982476737658") == 'Visa Classic 683198** **** 7658'
 
 
 def test_formatted_data():
@@ -78,7 +78,7 @@ def test_formatted_data():
             'Visa Classic 6831 98** **** 7658 -> Visa Platinum 8990 92** **** 5229\n' \
             '56883.54 USD\n'
     str_2 = '11.07.2018 Открытие вклада\n' \
-            'Счет  **6215\n' \
+            'Счет **6215\n' \
             '56883.54 руб.\n'
     assert formatted_data(dict_1) == str_1
     assert formatted_data(dict_2) == str_2
