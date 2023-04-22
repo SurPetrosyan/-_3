@@ -75,7 +75,7 @@ def test_formatted_data():
         "to": "Счет 72082042523231456215"
     }
     str_1 = '19.08.2018 Перевод с карты на карту\n' \
-            'Visa Classic 6831 98** **** 7658 -> Visa Platinum 8990 92** **** 5229\n' \
+            'Visa Classic 683198** **** 7658 -> Visa Platinum 899092** **** 5229\n' \
             '56883.54 USD\n'
     str_2 = '11.07.2018 Открытие вклада\n' \
             'Счет **6215\n' \
@@ -86,20 +86,20 @@ def test_formatted_data():
 
 def test_load_data():
     list_1 = [
-        {
-            "id": 596171168,
-            "state": "EXECUTED",
-            "date": "2018-07-11T02:26:18.671407",
-            "operationAmount": {
-                "amount": "79931.03",
-                "currency": {
+              {
+                "id": 441945886,
+                "state": "EXECUTED",
+                "date": "2019-08-26T10:50:58.294041",
+                "operationAmount": {
+                  "amount": "31957.58",
+                  "currency": {
                     "name": "руб.",
                     "code": "RUB"
-                }
-            },
-            "description": "Открытие вклада",
-            "to": "Счет 72082042523231456215"
-        }
-
-    ]
+                  }
+                },
+                "description": "Перевод организации",
+                "from": "Maestro 1596837868705199",
+                "to": "Счет 64686473678894779589"
+              }
+             ]
     assert load_data() == list_1
